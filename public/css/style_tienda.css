@@ -1,0 +1,121 @@
+/* Estilos específicos para la página de Tienda */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header img {
+    width: 70px; /* Puedes ajustar el valor según sea necesario */
+    height: auto; /* Esto mantiene la proporción original de la imagen */
+    margin-left: 130px; /* Ajusta este valor para mover la imagen hacia la derecha */
+}   
+
+.product-details {
+    background-color: #EBEFF1;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-details h2 {
+    color: #2d343c;
+    margin-bottom: 20px;
+}
+
+#product-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#product-details label {
+    text-align: left;
+    color: #2d343c;
+    font-weight: 600;
+}
+
+#product-details input,
+#product-details textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#product-details textarea {
+    resize: vertical;
+}
+
+#product-details input[type="submit"] {
+    background-color: #f35200;
+    color: #FFFFFF;
+    padding: 13px 0;
+    border: none;
+    border-radius: 25%;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#product-details input[type="submit"]:hover {
+    background-color: #f35200;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product-item {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    color: #2d343c;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    color: #575757;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.product-item .precio {
+    color: #f35200;
+    font-weight: 600;
+}
+
+.product-item .btn-2 {
+    display: inline-block;
+    padding: 8px 17px;
+    border: 1px solid #f35200;
+    border-radius: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.product-item .btn-2:hover {
+    background-color: #f35200;
+    color: #FFFFFF;
+}
